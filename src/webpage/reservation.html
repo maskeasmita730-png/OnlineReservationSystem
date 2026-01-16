@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Reservation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+    <h2>Train Reservation</h2>
+
+    <form action="reserve" method="post">
+        <input type="text" name="name" placeholder="Passenger Name" required>
+
+        <input type="number" name="age" placeholder="Age" required>
+
+        <input type="text" name="trainNo" placeholder="Train Number" required>
+
+        <select name="classType" required>
+            <option value="First Class">First Class</option>
+            <option value="Second Class">Second Class</option>
+            <option value="Sleeper">Sleeper</option>
+        </select>
+
+        <input type="date" name="date" required>
+
+        <input type="text" name="from" placeholder="From" required>
+
+        <input type="text" name="to" placeholder="To" required>
+
+        <button type="submit">Reserve Ticket</button>
+    </form>
+
+    <a href="cancellation.html">Cancel Ticket</a>
+</div>
+</body>
+</html>
